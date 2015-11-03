@@ -1,0 +1,380 @@
+<!--
+<#if contact.titel?has_content>
+    <#if contact.titel = "1"||contact.titel = "01" >
+        <#assign aanhef="heer"/>
+        <#assign aanhef2="meneer"/>
+    <#elseif contact.titel = "2"||contact.titel = "02" >
+        <#assign aanhef="mevrouw"/>
+        <#assign aanhef2="mevrouw"/>
+    <#else>
+        <#assign aanhef="heer of mevrouw"/>
+        <#assign aanhef2="meneer of mevrouw"/>
+    </#if>
+<#else>
+    <#assign aanhef="heer of mevrouw"/>
+    <#assign aanhef2="meneer of mevrouw"/>
+</#if>
+<#if contact.tussenvoegsel?has_content>
+    <#assign aanhef= "${aanhef} ${contact.tussenvoegsel?cap_first}">
+    <#assign aanhef2= "${aanhef2} ${contact.tussenvoegsel?cap_first}">
+</#if>
+<#if contact.achternaam?has_content>
+    <#assign aanhef= "${aanhef} ${contact.achternaam?cap_first}">
+    <#assign aanhef2= "${aanhef2} ${contact.achternaam?cap_first}">
+</#if>
+-->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--[if !mso]><!-- --><meta http-equiv="X-UA-Compatible" content="IE=edge" /><!--<![endif]-->
+<title>BankGiroLoterij</title>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+<style type="text/css">
+    body {
+            width:100% !important;
+        margin:0px;
+            padding:0px;
+        -webkit-font-smoothing:antialiased;
+        -webkit-text-size-adjust:none;
+        -ms-text-size-adjust:none;    
+        }
+    
+    .ReadMsgBody {
+            width: 100%;
+        }
+    
+        .ExternalClass {
+            width: 100%;
+        }
+    
+    table, td {
+        border-collapse:collapse;
+        mso-table-lspace:0pt;
+        mso-table-rspace:0pt;
+    }
+
+    a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+    }
+
+    *, *:after, *:before {
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box; /* Firefox, other Gecko */
+        box-sizing: border-box; /* Opera/IE 8+ */    
+    }
+    
+    .krul {
+        display:block !important;
+        width:19px !important;
+        max-width:19px !important;
+        height:auto !important;
+        overflow: visible !important; 
+        line-height: normal !important;
+    }
+    
+    * [lang~="krul"] {
+        display:block !important;
+        width:19px !important;
+        max-width:19px !important;
+        height:auto !important;
+        overflow: visible !important; 
+        line-height: normal !important;
+    }
+    
+    .button a, .button a:visited {
+        color: #fff; 
+        text-decoration: none;
+    }
+    
+    .header {
+            font-family:Tahoma, Arial, Helvetica, sans-serif !important;    
+        }
+    
+    .header a, .header a:visited {
+        color: #000; 
+        text-decoration: none;
+    }
+    
+    @media only screen and (max-width: 414px) {
+        body[yahoo] .krul, body[yahoo] .hide {
+            display:none !important;        
+        }
+        
+        body[yahoo] .float {
+            width: 100% !important;
+            max-width: 100% !important;
+            display:block !important;
+            float:left !important     
+        }
+        
+        body[yahoo] .zon {
+            padding-bottom:20px !important;    
+        }
+        
+        body[yahoo] .header {
+            font-family:Tahoma, Arial, Helvetica, sans-serif !important;    
+        }
+        
+        body[yahoo] .header span {
+            font-size:20px !important;
+            line-height:26px !important;    
+        }
+        
+        body[yahoo] .header span.prijs {
+            font-size:24px !important;
+            line-height:30px !important;    
+        }
+    }
+</style>
+<!--[if gte mso 9]>
+    <style type="text/css">
+        body, table, td {
+            font-family:Tahoma, Arial, Helvetica, sans-serif !important;
+        }
+    </style>
+<![endif]-->
+</head>
+
+<body yahoo="fix" background="http://img.td37.tripolis.com/npl/newsletters/2015/bgl/201507_hema/bg-body.jpg">
+<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" background="http://img.td37.tripolis.com/npl/newsletters/2015/bgl/201507_hema/bg-body.jpg">
+    <tr>
+        <td>
+        <table align="center" border="0" cellpadding="0" cellspacing="0" style="font-family:'PT Sans', Tahoma, Arial, Helvetica, sans-serif;">
+            <tr>
+                <td align="center" style="font-size:2px; line-height:1px; color:#f5f2ee;">
+                    &euro;&nbsp;20,- vrij besteedbaar bij de HEMA.
+                </td>
+            </tr>
+            
+            <!--<#if !onlineViewer>-->
+            <tr class="hide">
+                <td align="center" style="width:569px; max-width:569px;  font-size:12px; color:#333; padding-top:10px;">
+                    Deze maand speciaal voor u een HEMA cadeaukaart van &euro;&nbsp;20,- als u meespeelt!<br>
+                    Kunt u deze e-mail niet lezen, klik 
+                    <a href="http://bericht.bankgiroloterij.nl/public/preview?contactId=${contact.contactId}&jobId=${contact.jobId}" target="_blank" style="color:#333; text-decoration:underline;">
+                    hier</a>
+                </td>
+            </tr>
+            <!--</#if>-->
+                    
+            <tr>
+                <td style="width:569px; max-width:569px; padding-top:20px;"><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td valign="top" style="width:550px; max-width:550px;"><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="font-family:'PT Sans', Tahoma, Arial, Helvetica, sans-serif;">
+                      <tr>
+                      <td><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td valign="top"><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                            <tr></tr>
+                            <tr>
+                              <td class="krul" lang="krul" valign="top" style="display:none; width:0; max-height:0; overflow:hidden; line-height:0; mso-hide:all;"><img src="http://img.td37.tripolis.com/npl/newsletters/2015/bgl/201507_hema/logo-krul.png" width="100%" border="0" style="display:block;" /></td>
+                              <td valign="top" style="width:550px; max-width:550px;"><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="font-family:'PT Sans', Tahoma, Arial, Helvetica, sans-serif;">
+                                <!-- Logo -->
+                                <tr>
+                                  <td><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                      <td width="256" valign="top" align="left"><img src="http://img.td37.tripolis.com/npl/newsletters/2015/bgl/201507_hema/logo2.png" width="100%" border="0" style="display:block;" /></td>
+                                      <td valign="top"><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                          <td height="24">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                          <td height="39" bgcolor="#c5a043">&nbsp;</td>
+                                        </tr>
+                                      </table></td>
+                                      <td width="15" valign="top" align="right"><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                          <td><img src="http://img.td37.tripolis.com/npl/newsletters/2015/bgl/201507_hema/hoekje.png" width="15" height="39" border="0" style="display:block;" /></td>
+                                        </tr>
+                                        <tr>
+                                          <td height="24" bgcolor="#c5a043">&nbsp;</td>
+                                        </tr>
+                                      </table></td>
+                                    </tr>
+                                  </table></td>
+                                </tr>
+                                <!-- //Logo -->
+                                <!-- Content -->
+                                <tr>
+                                  <td><table bgcolor="#FFFFFF" width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                      <td style="border-left:#c5a043 2px solid; border-right:#c5a043 2px solid;"><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="font-family:'PT Sans', Tahoma, Arial, Helvetica, sans-serif;">
+                                        <!-- Header tekst -->
+                                        <tr>
+                                          <td class="header" align="center" bgcolor="#c5a043" style="color:#000; padding:0px 5px 15px 5px;"><a href="http://ad.doubleclick.net/ddm/clk/290991512;113856358;n?https://hemafotoprijzen.bankgiroloterij.nl/speel-mee-online?brongroep=7736&broncode=0124&utm_source=BankGiroLoterij&utm_medium=E-MAILINGS_GDL&utm_campaign=1507_JP_Hema_B257&utm_content=B257_1AM_uitrol_cs_subA_con2" target="_blank" tags="header bgl_preuitrol_b257_201507" style="text-decoration:none; color:#000001;"> <span style="font-size:35px; line-height:45px; font-weight:bold;">Nu kans op</span><br />
+                                            <span class="prijs" style="font-size:54px; line-height:75px; font-weight:bold; color:#f30716;">&euro;&nbsp;100.000,-</span><br />
+                                            <span style="font-size:24px; line-height:34px; font-weight:bold;">en u ontvangt gegarandeerd<br>
+                                              een&nbsp;HEMA&nbsp;cadeaukaart&nbsp;van &euro;&nbsp;20,&ndash;!</span> </a></td>
+                                        </tr>
+                                        <!-- //Header tekst -->
+                                        <tr>
+                                          <td><a href="http://ad.doubleclick.net/ddm/clk/290991512;113856358;n?https://hemafotoprijzen.bankgiroloterij.nl/speel-mee-online?brongroep=7736&broncode=0124&utm_source=BankGiroLoterij&utm_medium=E-MAILINGS_GDL&utm_campaign=1507_JP_Hema_B257&utm_content=B257_1AM_uitrol_cs_subA_con2" target="_blank" tags="animatie bgl_preuitrol_b257_201507" style="text-decoration:none; color:#fff; text-transform:uppercase;"><img src="http://img.td37.tripolis.com/npl/newsletters/2015/bgl/201507_hema/hema-kaart.jpg" width="100%" border="0" style="display:block;" /></a></td>
+                                        </tr>
+                                        <tr>
+                                          <td style="padding:10px;"><table align="center" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                              <td style="width:490px; max-width:490px;"><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="font-family:'PT Sans', Tahoma, Arial, Helvetica, sans-serif; font-size:14px;">
+                                                <tr>
+                                                  <td style="line-height:20px; padding-bottom:20px;">U
+                                                    ontvangt n&uacute; een <strong>HEMA cadeaukaart t.w.v. &euro;&nbsp;20</strong>,- als u gaat meespelen in de BankGiroLoterij. 
+                                                    Met een gemiddelde winkans van 1 op 3 maakt u deze maand ook <a href="http://ad.doubleclick.net/ddm/clk/290991512;113856358;n?https://hemafotoprijzen.bankgiroloterij.nl/speel-mee-online?brongroep=7736&broncode=0124&utm_source=BankGiroLoterij&utm_medium=E-MAILINGS_GDL&utm_campaign=1507_JP_Hema_B257&utm_content=B257_1AM_uitrol_cs_subA_con2" target="_blank" tags="text bgl_preuitrol_b257_201507" style="color:#000001; text-decoration:underline; font-weight:bold;">direct kans op &euro;&nbsp;100.000,-</a> of  honderdduizenden andere prijzen. </td>
+                                                </tr>
+                                                <tr>
+                                                  <td align="center" style="padding-bottom:20px;"><!--[if (gte mso 9)|(IE)]>
+                                                                            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" position="1,0" fillcolor="none" stroke="false" style="width:420px;height:55px;">
+                                                                                <v:fill type="tile" position="1,0" src="http://img.td37.tripolis.com/npl/newsletters/2015/bgl/201507_hema/button3.jpg" color="#29bd3c" />
+                                                                                <v:textbox inset="0,0,0,0">
+                                                                                    <table width="420" align="center" border="0" cellpadding="0" cellspacing="0" style="font-family:Tahoma, Verdana, Segoe, sans-serif; font-size:22px; font-weight:bold;">
+                                                                                        <tr>
+                                                                                            <td width="80">&nbsp;</td>
+                                                                                            <td class="button" align="left" height="55" background="http://img.td37.tripolis.com/npl/newsletters/2015/bgl/201507_hema/button3.jpg">
+                                                                                                <a href="http://ad.doubleclick.net/ddm/clk/290991512;113856358;n?https://hemafotoprijzen.bankgiroloterij.nl/speel-mee-online?brongroep=7736&broncode=0124&utm_source=BankGiroLoterij&utm_medium=E-MAILINGS_GDL&utm_campaign=1507_JP_Hema_B257&utm_content=B257_1AM_uitrol_cs_subA_con2" target="_blank" tags="button bgl_preuitrol_b257_201507" style="color:#fff; text-decoration:none; text-transform:uppercase;">Meer informatie</a>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </v:textbox>
+                                                                            </v:rect>
+                                                                        <![endif]-->
+                                                    <![if !mso]>
+                                                    <![if !IE]>
+                                                    <table align="center" border="0" cellspacing="0" cellpadding="0">
+                                                      <tr>
+                                                        <td style="width:420px; max-width:420px;"><table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                                                          <tr>
+                                                            <td class="button" style="background-color:#29bd3c; background-image:url(http://img.td37.tripolis.com/npl/newsletters/2015/bgl/201507_hema/bg-button.jpg); border-radius:5px; display:block; width:100%; min-height:30px; mso-hide:all;"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                              <tr>
+                                                                <td style="padding:14px 10px 14px 10px;"><table width="100%" border="0" cellspacing="0" cellpadding="0" style="font-family:'PT Sans', Tahoma, Arial, Helvetica, sans-serif; font-size:18px;">
+                                                                  <tr>
+                                                                    <td class="button" align="center" style="color:#fff; font-weight:bold;"><table width="100%" border="0" cellspacing="0" cellpadding="0" style="font-family:'PT Sans', Tahoma, Arial, Helvetica, sans-serif; font-size:22px;">
+                                                                      <tr>
+                                                                        <td class="button" align="center" style="color:#fff; font-weight:bold;"><a href="http://ad.doubleclick.net/ddm/clk/290991512;113856358;n?https://hemafotoprijzen.bankgiroloterij.nl/speel-mee-online?brongroep=7736&broncode=0124&utm_source=BankGiroLoterij&utm_medium=E-MAILINGS_GDL&utm_campaign=1507_JP_Hema_B257&utm_content=B257_1AM_uitrol_cs_subA_con2" target="_blank" tags="button bgl_preuitrol_b257_201507" style="text-decoration:none; color:#fff; text-transform:uppercase;">Meer informatie</a></td>
+                                                                        <td><a href="http://ad.doubleclick.net/ddm/clk/290991512;113856358;n?https://hemafotoprijzen.bankgiroloterij.nl/speel-mee-online?brongroep=7736&broncode=0124&utm_source=BankGiroLoterij&utm_medium=E-MAILINGS_GDL&utm_campaign=1507_JP_Hema_B257&utm_content=B257_1AM_uitrol_cs_subA_con2" target="_blank" tags="button bgl_preuitrol_b257_201507"><img src="http://img.td37.tripolis.com/npl/newsletters/2015/bgl/201507_hema/pijl.png" width="25" height="25" border="0" style="display:block;" /></a></td>
+                                                                      </tr>
+                                                                    </table></td>
+                                                                  </tr>
+                                                                </table></td>
+                                                              </tr>
+                                                            </table></td>
+                                                          </tr>
+                                                        </table></td>
+                                                      </tr>
+                                                    </table>
+                                                    <![endif]>
+                                                    <![endif]></td>
+                                                </tr>
+                                                <tr>
+                                                  <td><table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                      <td class="float" valign="top" style="padding-bottom:20px; width:320px; max-width:320px;"><table style="font-family:'PT Sans', Tahoma, Arial, Helvetica, sans-serif; font-size:14px; line-height:20px;" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                          <td valign="top" style="font-size:30px; font-weight:bold; color:#009b00; padding-right:15px; padding-bottom:10px;">✓</td>
+                                                          <td style="color:#000; font-weight:bold; padding-bottom:10px;">Gegarandeerd een HEMA cadeaukaart van &euro;&nbsp;20,-</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td valign="top" style="font-size:30px; font-weight:bold; color:#009b00; padding-right:15px; padding-bottom:10px;">✓</td>
+                                                          <td style="color:#000; font-weight:bold; padding-bottom:10px;"> Kans op  &euro;&nbsp;100.000,- </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td style="font-size:30px; font-weight:bold; color:#009b00; padding-right:15px; padding-bottom:10px;">✓</td>
+                                                          <td style="color:#000; font-weight:bold; padding-bottom:10px;">Kans op honderdduizenden prijzen</td>
+                                                        </tr>
+                                                      </table></td>
+                                                      <td class="float" valign="top" align="right" style="padding-left:5px; width:170px; max-width:170px; min-width:75px;"><table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                          <td class="zon" valign="top" style="padding-left:5px; width:170px; max-width:170px; min-width:75px;"><a href="http://ad.doubleclick.net/ddm/clk/290991512;113856358;n?https://hemafotoprijzen.bankgiroloterij.nl/speel-mee-online?brongroep=7736&broncode=0124&utm_source=BankGiroLoterij&utm_medium=E-MAILINGS_GDL&utm_campaign=1507_JP_Hema_B257&utm_content=B257_1AM_uitrol_cs_subA_con2" target="_blank" tags="imgage bgl_preuitrol_b257_201507"><img src="http://img.td37.tripolis.com/npl/newsletters/2015/bgl/201507_hema/zon.png" width="100%" border="0" style="display:block;" /></a></td>
+                                                        </tr>
+                                                      </table></td>
+                                                    </tr>
+                                                  </table></td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="line-height:20px; padding-bottom:20px;"> PS. De prijzen bij de BankGiro&nbsp;Loterij&nbsp;-&nbsp;met een gemiddelde winkans van 1&nbsp;op&nbsp;3&nbsp;-&nbsp;lopen op tot wel &euro;&nbsp;1,5 miljoen! <a href="http://ad.doubleclick.net/ddm/clk/290991512;113856358;n?https://hemafotoprijzen.bankgiroloterij.nl/speel-mee-online?brongroep=7736&broncode=0124&utm_source=BankGiroLoterij&utm_medium=E-MAILINGS_GDL&utm_campaign=1507_JP_Hema_B257&utm_content=B257_1AM_uitrol_cs_subA_con2" target="_blank" tags="text bgl_preuitrol_b257_201507" style="color:#000001; text-decoration:underline;">Bekijk het aanbod</a>. </td>
+                                                </tr>
+                                                <tr>
+                                                  <td><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="font-family:'PT Sans', Tahoma, Arial, Helvetica, sans-serif; font-size:16px;">
+                                                    <tr>
+                                                      <td valign="top" width="100"><table align="left" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                          <td width="89"><img src="http://img.td37.tripolis.com/npl/newsletters/2015/bgl/201507_hema/leontien.jpg" border="0" width="100%" style="display:block;" alt="Leontien Borsato" /></td>
+                                                        </tr>
+                                                      </table></td>
+                                                      <td valign="top"><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="font-family:'PT Sans', Tahoma, Arial, Helvetica, sans-serif; font-size:14px;">
+                                                        <tr>
+                                                          <td>Veel geluk!</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td valign="top" width="100"><table align="left" border="0" cellpadding="0" cellspacing="0">
+                                                            <tr>
+                                                              <td width="84"><img src="http://img.td37.tripolis.com/npl/newsletters/2015/bgl/201507_hema/ht-leontien.jpg" width="100%" border="0" style="display:block;" /></td>
+                                                            </tr>
+                                                          </table></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>Leontine Borsato<br>
+                                                            BankGiro Loterij</td>
+                                                        </tr>
+                                                      </table></td>
+                                                    </tr>
+                                                  </table></td>
+                                                </tr>
+                                              </table></td>
+                                            </tr>
+                                          </table></td>
+                                        </tr>
+                                      </table></td>
+                                    </tr>
+                                  </table>
+                                    <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                      <tr>
+                                        <td><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                          <tr>
+                                            <td width="15" valign="bottom" style="line-height:1px; font-size:2px;"><img src="http://img.td37.tripolis.com/npl/newsletters/2015/bgl/201507_hema/hoek-links.png" width="15" height="15" border="0" style="display:block;" /></td>
+                                            <td bgcolor="#ffffff" valign="bottom" style="line-height:1px; font-size:2px;"><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                              <tr>
+                                                <td bgcolor="#ffffff" valign="bottom" style="line-height:1px; font-size:2px; border-bottom:#c5a043 2px solid;">&nbsp;</td>
+                                              </tr>
+                                            </table></td>
+                                            <td width="15" valign="bottom" style="line-height:1px; font-size:2px;"><img src="http://img.td37.tripolis.com/npl/newsletters/2015/bgl/201507_hema/hoek-rechts.png" width="15" height="15" border="0" style="display:block;" /></td>
+                                          </tr>
+                                        </table></td>
+                                      </tr>
+                                    </table></td>
+                                </tr>
+                                <!-- //Content -->
+                                <!-- Footer -->
+                                <tr>
+                                  <td align="center" style="font-family:'PT Sans', Tahoma, Arial, Helvetica, sans-serif; font-size:12px; padding:30px; color:#333;">Een lot kost &euro;&nbsp;12,50 per trekking, incl. WeekprijsVerdubbelaar &agrave; &euro;&nbsp;0,50. Er zijn 15 trekkingen per jaar. U speelt mee zolang u wilt. <a href="http://www.bankgiroloterij.nl" tags="corporate" target="_blank" style="color:#333; text-decoration:underline;">BankGiro Loterij</a>, 
+                                    Van Eeghenstraat 70, 1071 GK Amsterdam 0900&ndash;300&nbsp;1600 (&euro;&nbsp;0,50&nbsp;per&nbsp;gesprek). 
+                                    De vergunning voor de loterij is afgegeven door de Kansspelautoriteit onder kenmerk 8788 d.d. 25/11/2014. 
+                                    Wilt u geen e-mail meer ontvangen, dan kunt u zich <a href="http://www.bankgiroloterij.nl/e-mailservice/afmelden-nieuwsbrief.htm?token=${contact.email_token!}" type="unsubscribe" style="color:#333; text-decoration:underline" target="_blank">uitschrijven</a>. <br />
+                                    <br />
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                      <tr>
+                                        <td width="95"><img src="http://img.td37.tripolis.com/npl/newsletters/2015/bgl/201507_hema/speel-bewust.png" width="100%" border="0" style="display:block;" alt="18+ speel bewust" /></td>
+                                      </tr>
+                                    </table>
+                                    <span style="font-size:8px; color:#333;">V02 cs con2</span></td>
+                                </tr>
+                                <!-- //Footer-->
+                              </table></td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                      </table></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                </table></td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
